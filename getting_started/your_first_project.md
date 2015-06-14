@@ -10,6 +10,18 @@ To create an empty project, open a command-prompt (Windows) or terminal (Mac/Lin
 
 You can replace "HelloWorld" with whatever you want to call your project.
 
+The project you just created is now placed in your 'Users-Folder'; if you did not have customized the path for your projects, yet. For example in Windows the path will be like: 'C:\Users\Your-User-Name\' ; So the 'HelloWorld'-Project can be found at 'C:\Users\Your-User-Name\HelloWorld\'.
+
+In the command-prompt of Windows ( CMD ) you can use the system-variable ' %USERPROFILE% ' to locate the actual Users Home-folder; E.g. ( for copying the image ) :
+
+    cp "%USERPROFILE%\Downloads\Downloaded-Image.png" "%USERPROFILE%\My-Project\Assets\My-New-Image.png"
+
+If you instead use the PowerShell or running Linux you can use the $HOME-Variable; E.g. ( for moving the image ) :
+
+    mv "$HOME/Downloads/Downloaded-Image.png" "$HOME/My-Project/Assets/My-New-Image.png"
+
+## ... instead Creating a New Project based on an Example if you don't wish to use your own Image
+
 OpenFL contains multiple samples for illustrating different features of the platform. One of the simple samples is called "DisplayingABitmap", as we build our first project, we will quickly walk through the steps to recreate this sample. You can also generate a copy of it yourself using:
 
     openfl create DisplayingABitmap
